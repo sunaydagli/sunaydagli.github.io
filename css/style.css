@@ -4,7 +4,12 @@
     box-sizing: border-box;
     padding: 0;
     background-color: #1b262c;
-    color:
+    color: #bbe1fa;
+    font-family: 'Muli', sans-serif;
+}
+
+.logo {
+    background-color: transparent;
 }
 
 
@@ -18,9 +23,16 @@ header {
 
 header ul {
     display: flex;
+    background-color: transparent;
+}
+header ul li{
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
 }
 nav {
     display: flex;
+    background-color: #0f4c75;
 }
 
 header nav li {
@@ -28,12 +40,12 @@ header nav li {
     font-family: 'Muli', sans-serif;
 }
 
-a { color:black;
+a { color:bbe1fa;
 text-decoration: none; } /* Globally */
 
 /* Each state */
 
-a:visited { text-decoration: none; color:black; }
-a:hover { text-decoration: none; color:blue; }
-a:focus { text-decoration: none; color:yellow; }
-a:hover, a:active { text-decoration: none; color:black }
+a:visited { text-decoration: none; color:bbe1fa; }
+a:hover { text-decoration: none; color: 3282b8; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; color: 3282b8 }
