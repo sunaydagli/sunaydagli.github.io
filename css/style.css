@@ -19,34 +19,36 @@ body {
 }
 
 header {
-    display: flex;
     background-color: #0f4c75;
-    justify-content: center;
 }
 
 .nav-name {
-    display: inline-block;
-    padding-left: 11px;
-    vertical-align: middle;
+    display: flex;
     color: #bbe1fa;
     display: none;
 }
 
 header ul {
-    display: -webkit-flex;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header nav li {
-    margin-left: auto;
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    padding: 15px;
-    font-size: 22px;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .logo{
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-left:10px;
+}
+
+
+.big-topic {
+    color: #bbe1fa
 }
 
 a { color:#bbe1fa;
