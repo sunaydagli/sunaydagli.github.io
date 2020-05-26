@@ -3,49 +3,59 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    background-color: #1b262c;
-    color: #bbe1fa;
+    margin: 0;
     font-family: 'Muli', sans-serif;
 }
 
-.logo {
-    background-color: transparent;
+.logo-small {
+    display: flex;
+    margin: 10px 10px;
+    display: none;
+    //change header for this
 }
 
+body {
+    background-color: #1b262c;
+}
 
 header {
-    background-color: #0f4c75;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    background-color: #0f4c75;
+    justify-content: center;
+}
+
+.nav-name {
+    display: inline-block;
+    padding-left: 11px;
+    vertical-align: middle;
+    color: #bbe1fa;
+    display: none;
 }
 
 header ul {
-    display: flex;
-    background-color: transparent;
-}
-header ul li{
-    display: flex;
-    background-color: transparent;
-    padding: 10px;
-}
-nav {
-    display: flex;
-    background-color: #0f4c75;
+    display: -webkit-flex;
+    align-items: center;
 }
 
 header nav li {
+    margin-left: auto;
+    display: block;
     text-decoration: none;
-    font-family: 'Muli', sans-serif;
+    padding: 15px;
+    font-size: 22px;
 }
 
-a { color:bbe1fa;
+.logo{
+    margin-top: 10px;
+}
+
+a { color:#bbe1fa;
+   //  background-color: #0f4c75;
 text-decoration: none; } /* Globally */
 
 /* Each state */
 
 a:visited { text-decoration: none; color:bbe1fa; }
-a:hover { text-decoration: none; color: 3282b8; }
+a:hover { text-decoration: none; color: #3282b8; }
 a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; color: 3282b8 }
+a:hover, a:active { text-decoration: none; color: #3282b8 }
