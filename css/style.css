@@ -93,7 +93,7 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
 
 .backgroundtxt {
     position: absolute;
-    top: 54%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 50px;
@@ -102,4 +102,11 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
 h1 {
     text-align: center;
     z-index: 1;
+}
+
+.bg1 {
+    min-height: 100%;
+    mid-width: 1024px;
+    width: 100%;
+    height: auto;
 }
