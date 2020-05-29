@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,13 +16,17 @@
     display: none;
     //change header for this
 }
-
 body {
+    margin-top: 125px;
     background-color: #1b262c;
 }
 
 header {
     background-color: #0f4c75;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 
 .nav-name {
@@ -31,7 +38,7 @@ header {
 header ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header nav li {
@@ -39,6 +46,7 @@ header nav li {
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+
 }
 
 .logo{
@@ -52,8 +60,8 @@ header nav li {
 }
 
 a { color:#bbe1fa;
-   //  background-color: #0f4c75;
-text-decoration: none; } /* Globally */
+text-decoration: none; 
+} /* Globally */
 
 /* Each state */
 
@@ -61,3 +69,30 @@ a:visited { text-decoration: none; color:bbe1fa; }
 a:hover { text-decoration: none; color: #3282b8; }
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; color: #3282b8 }
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+.parallax {
+    background-image: url("background/IMG_8935.jpg");
+    min-height: 600px;  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.backgroundtxt {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+}
