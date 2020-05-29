@@ -3,6 +3,10 @@
 html {
     scroll-behavior: smooth;
 }
+
+html, body {
+    height: 100%;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -27,6 +31,7 @@ header {
     position: fixed;
     top:0;
     width: 100%;
+    z-index: 500;
 }
 
 .nav-name {
@@ -77,8 +82,9 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
   }
 
 .parallax {
+    height: 100vh;
     background-image: url("background/IMG_8935.jpg");
-    min-height: 600px;  
+    min-height: 600px;
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -87,7 +93,7 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
 
 .backgroundtxt {
     position: absolute;
-    top: 52%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 50px;
@@ -95,4 +101,12 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
 
 h1 {
     text-align: center;
+    z-index: 1;
+}
+
+.bg1 {
+    min-height: 100%;
+    mid-width: 1024px;
+    width: 100%;
+    height: auto;
 }
