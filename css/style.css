@@ -103,10 +103,3 @@ h1 {
     text-align: center;
     z-index: 1;
 }
-
-.bg1 {
-    min-height: 100%;
-    mid-width: 1024px;
-    width: 100%;
-    height: auto;
-}
