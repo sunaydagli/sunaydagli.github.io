@@ -61,6 +61,7 @@ nav li {
 .logo{
     margin-top: 8px;
     margin-left:10px;
+    
 }
 
 
@@ -150,6 +151,7 @@ section h1 {
     border-radius: 50%;
     border: 10px solid #bbe1fa;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .info {
@@ -207,4 +209,41 @@ section h1 {
       max-width: 40%;
       height: auto;
       vertical-align: middle;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
+
+  h3 {
+      text-align: center;
+      text-decoration: underline;
+  }
+
+  .course_list {
+      text-align: center;
+    vertical-align: middle;
+  }
+  
+  .tile {
+      position: relative;
+      background-color: #0f4c75;
+      background-clip: border-box;
+      display: inline-block;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction: normal;
+      vertical-align:middle;
+      width: 14rem;
+      min-height: 50px;
+      padding: 5px;
+      margin: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      flex: 0 0 50%;
+      max-width: 50%;
+      transition: transform 0.5s ease;
+      border-radius: 5%;
+  }
+
+  .tile .tile-body h4{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
