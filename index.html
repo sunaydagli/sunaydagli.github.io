@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" contents="Personal website of Sunay Dagli, an undergraduate student at UC Berkeley, 
+        interested in software engineering. Welcome to my website!">
+        <meta name="keywords" contents="Sunay, Dagli, Sunay Dagli, sunnyd, software, software engineer, computer science, math
+        engineering, solar, energy">
+        <meta name="author" contents="Sunay Dagli">
         <script src = "./scripts.js"></script>
         <title>Sunay Dagli</title>
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -10,34 +18,42 @@
         <link rel="stylesheet" type="text/css" href ="css/style.css"
     </head>
     <body>
-        <header>
             <a href="http://sunaydagli.github.io/index.html">
                 <img type = "image/png" class="logo-small" src="images/logo56.png" alt = "logo">
             </a>
             <div class = "nav-name">Sunay Dagli</div>
-            <nav>
+            <nav id = "navbar">
                 <ul class = "menu">
                     <li><a href="http://sunaydagli.github.io/index.html">
                         <img type = "image/png" class="logo" src="images/logo85x96.png" alt = "logo"></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#extracurriculars">Extracurriculars</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#links">Links</a></li>
+                    <li><a class = 'anchor' href="#about">About</a></li>
+                    <li><a class = 'anchor' href="#education">Education</a></li>
+                    <li><a class = 'anchor' href="#courses">Courses</a></li>
+                    <li><a class = 'anchor' href="#experience">Experience</a></li>
+                    <li><a class = 'anchor' href="#projects">Projects</a></li>
+                    <li><a class = 'anchor' href="#extracurriculars">Extracurriculars</a></li>
+                    <li><a class = 'anchor' href="#contact">Contact</a></li>
+                    <li><a class = 'anchor' href="#links">Links</a></li>
                 </ul>
             </nav>
-        </header>
 
         <main class = 'wrapper'>
-            <section class = "big-topic" id = "background">
+            <section id = "background">
                 <div class = "parallax"></div>
-                <h1 class = 'backgroundtxt'><span>Hi, I'm Sunay Dagli.<br>Welcome to my website!</span></h1>
+                <h2 id = 'backgroundtxt'><span>Hi, I'm Sunay Dagli.<br>Welcome to my website!</span></h2>
             </section>
             <section  class = "big-topic" id = 'about'> 
-                <h1>About Me</h1>
+                <h1><span id="one"></span>About Me</h1>
+                <ul class = "description">
+                    <li><img id = "me" type = "image/svg-xml" src="images/pfp.jpeg"</li>
+                    <li><p class="info">My name is Sunay Dagli and I am a sophomore at the University of California, Berkeley.<br><br>I am 
+                        currently pursuing a dual-degree in Electrical Engineering & Computer Science (EECS) and Energy Engineering through
+                        the College of Engineering. I am passionate about the intersection between software development and impact-driven 
+                        fields such as sustainability. To further understand how technology, specifically software and computer engineering, 
+                        can reduce large crises facing our world today, I pursue this dual degree.<br><br>I am always looking for exciting, new 
+                        opportunities, so feel free to contact me at <a href = "mailto: sunaydagli@berkeley.edu">sunaydagli@berkeley.edu</a>.
+                    </p></li>
+                </ul>
             </section>
             <section class = "big-topic" id = "education">
                 <h1>Education</h1>
@@ -60,6 +76,7 @@
             <section class = "big-topic" id = "links">
                 <h1>Links</h1>
             </section>
+            <script async src= "scripts.js"></script>
         </main>
         <footer>
             

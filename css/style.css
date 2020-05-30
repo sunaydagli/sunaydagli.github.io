@@ -21,11 +21,11 @@ html, body {
     //change header for this
 }
 body {
-    margin-top: 125px;
+
     background-color: #1b262c;
 }
 
-header {
+nav {
     background-color: #0f4c75;
     overflow: hidden;
     position: fixed;
@@ -40,19 +40,20 @@ header {
     display: none;
 }
 
-header ul {
+nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-header nav li {
+nav li {
     display: inline-block;
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
 
 }
+
 
 .logo{
     margin-top: 8px;
@@ -61,13 +62,20 @@ header nav li {
 
 
 .big-topic {
-    color: #bbe1fa
+    color: #bbe1fa;
+
 }
 
 a { color:#bbe1fa;
 text-decoration: none; 
 } /* Globally */
 
+:target::before {
+    content: "";
+    display: block;
+    height: 135px; /* fixed header height*/
+    margin: -115px 0 0; /* negative fixed header height */
+  }
 /* Each state */
 
 a:visited { text-decoration: none; color:bbe1fa; }
@@ -91,7 +99,8 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
     background-size: cover; 
 }
 
-.backgroundtxt {
+#backgroundtxt {
+    color: #bbe1fa;
     position: absolute;
     top: 27%;
     left: 50%;
@@ -99,14 +108,40 @@ a:hover, a:active { text-decoration: none; color: #3282b8 }
     font-size: 50px;
 }
 
-h1 {
+section h1 {
+    position: relative;
     text-align: center;
     z-index: 1;
+    font-size: 40px;
+    font-weight: 600;
 }
+/* h1 span {
+    position: absolute;
 
+} */
 .bg1 {
     min-height: 100%;
     mid-width: 1024px;
     width: 100%;
     height: auto;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+}
+.description{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description li{
+    padding: 0px 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+#me {
+    border-radius: 50%;
+    border: 10px solid #bbe1fa;
 }
