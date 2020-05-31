@@ -514,8 +514,9 @@ section h1 {
     #backgroundtxt {
         font-size: 32px;
     }
-    #background {
+    #background::before {
         content: '';
+        opacity:0;
     }
 
 }
