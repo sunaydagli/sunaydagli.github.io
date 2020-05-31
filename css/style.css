@@ -521,10 +521,6 @@ section h1 {
         content: '';
         opacity:0;
     }
-        #background::before {
-        content: '';
-        opacity:0;
-    }
     .parallax {
         height: 80vh;
     }
