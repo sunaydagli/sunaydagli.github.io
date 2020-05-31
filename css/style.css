@@ -24,7 +24,6 @@ p {
     //change header for this
 }
 body {
-
     background-color: #1b262c;
 }
 
@@ -71,13 +70,12 @@ nav li {
 
 .big-topic {
     color: #bbe1fa;
-
 }
 
 
 a { color:#bbe1fa;
 text-decoration: none; 
-} /* Globally */
+} Globally
 
 :target::before {
     content: "";
@@ -353,35 +351,33 @@ section h1 {
   }
 
   .extracurrs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
   }
 
   .extracurrs li {
       display: flex;
       margin: 20px;
       justify-content: center;
-      align-items:center;
-      max-width: 70%;
+      align-items: center;
+      max-width: 60%;
   }
 
   .extracurrs li #extra {
-      max-width: 300px;
-      height: auto;
-  }
-
-  .extracurrs li span {
-    margin:10px;
+    max-width: 250px;
+    height: auto;
 }
 
-  .extracurrs li img:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform:scale(1.1);
-  }
+.extracurrs li span {
+  margin:10px;
+}
 
-
+.extracurrs li img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform:scale(1.1);
+}
 
   footer {
       display: flex;
@@ -397,4 +393,22 @@ section h1 {
 
   #contact {
       text-align: center;
+  }
+
+  .icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .icons li {
+      display: inline-block;
+
+      padding: 30px;
+  }
+
+  .icons li #mail{
+    min-width: 48px;
+    height: auto;
   }
