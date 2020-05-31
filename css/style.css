@@ -8,6 +8,7 @@ html {
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 * {
     box-sizing: border-box;
@@ -392,6 +393,7 @@ section h1 {
       align-items: center;
       justify-content: space-around;
       text-align: center;
+      vertical-align: middle;
   }
 
   #contact {
@@ -508,25 +510,30 @@ section h1 {
     .skills li {
         margin: 20px 0px;
     }
+    
   }
 
   @media screen and (max-width: 480px) {
     #backgroundtxt {
-        font-size: 32px;
+        font-size: 44px;
     }
     #background::before {
         content: '';
         opacity:0;
+    }
+        #background::before {
+        content: '';
+        opacity:0;
+    }
+    .parallax {
+        height: 80vh;
     }
 }
 
 @media screen and (max-width: 320px) {
     #backgroundtxt {
-        font-size: 36px;
+        font-size: 40px;
     }
-    #background::before {
-        content: '';
-        opacity:0;
-    }
+
 }
 
