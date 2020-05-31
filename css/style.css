@@ -391,10 +391,12 @@ section h1 {
       height: 50px;
       align-items: center;
       justify-content: space-around;
+      text-align: center;
   }
 
   #contact {
       text-align: center;
+      margin: 0px 15px;
   }
 
   .icons {
@@ -489,6 +491,20 @@ section h1 {
     }
     #background {
         visibility: visible;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .skills li {
+        margin: 20px 0px;
+    }
+    .extracurrs {
+        flex-direction: column;
+    }
+
+    .extracurrs li {
+        flex-direction: column;
+        text-align: center;
     }
   }
 
