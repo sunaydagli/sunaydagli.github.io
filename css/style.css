@@ -79,12 +79,6 @@ a { color:#bbe1fa;
 text-decoration: none; 
 }
 
-:target::before {
-    content: "";
-    display: block;
-    height: 135px; /* fixed header height*/
-    margin: -135px 0 0; /* negative fixed header height */
-  }
 /* Each state */
 
 .menu a:visited { text-decoration: none; color:bbe1fa; }
