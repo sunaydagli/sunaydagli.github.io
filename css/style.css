@@ -62,7 +62,9 @@ nav li {
     margin-left:10px;
     
 }
-
+#about {
+    margin: 0px 150px;
+}
 
 .big-topic {
     color: #bbe1fa;
@@ -281,5 +283,65 @@ section h1 {
     justify-content: space-around;
     max-width: 30%;
     line-height: 2;
+  }
+
+  .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .exp-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 10px;
+      padding: 20px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+  }
+  .exp-logo img {
+      max-width: 160px;
+      height: 160px;
+  }
+  .exp-logo img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform:scale(1.1);
+  }
+  
+
+  img {
+    transition: .3s;
+  }
+
+  #projects .box {
+      max-width: 270px;
+  }
+
+  .box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 350px;
+      height: auto;
+      border-radius: 4px;
+      background-color: #3282b8;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      transition: .3s;
+  }
+
+  .bolded {
+      font-size:24px;
+  }
+  .exp-name {
+      line-height: 1.5;
   }
 
