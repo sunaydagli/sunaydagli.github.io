@@ -65,6 +65,9 @@ nav li {
 #about {
     margin: 0px 150px;
 }
+#about a:hover {
+    color: #0f4c75;
+}
 
 .big-topic {
     color: #bbe1fa;
@@ -239,6 +242,10 @@ section h1 {
       text-align: center;
     vertical-align: middle;
   }
+  #courses .course_list li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform:scale(1.1);
+  }
   
   .tile {
       position: relative;
@@ -249,7 +256,7 @@ section h1 {
       -webkit-box-direction: normal;
       vertical-align:middle;
       width: 17rem;
-      min-height: 70px;
+      min-height: 80px;
       padding: 5px;
       margin: 15px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -345,3 +352,49 @@ section h1 {
       line-height: 1.5;
   }
 
+  .extracurrs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .extracurrs li {
+      display: flex;
+      margin: 20px;
+      justify-content: center;
+      align-items:center;
+      max-width: 70%;
+  }
+
+  .extracurrs li #extra {
+      max-width: 300px;
+      height: auto;
+  }
+
+  .extracurrs li span {
+    margin:10px;
+}
+
+  .extracurrs li img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform:scale(1.1);
+  }
+
+
+
+  footer {
+      display: flex;
+      font-size: 10px;
+      font-family: 'Muli', sans-serif;
+      font-weight: lighter;
+      background-color: #0f4c75;
+      color: #bbe1fa;
+      height: 50px;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  #contact {
+      text-align: center;
+  }

@@ -15,7 +15,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="images/site.webmanifest">
-        <link rel="stylesheet" type="text/css" href ="css/style.css"
+        <link rel="stylesheet" type="text/css" href ="css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script>
+            AOS.init();
+        </script>
     </head>
     <body>
             <a href="http://sunaydagli.github.io/index.html">
@@ -33,7 +37,6 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#extracurriculars">Extracurriculars</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#links">Links</a></li>
                 </ul>
             </nav>
 
@@ -42,30 +45,32 @@
                 <div class = "parallax"></div>
                 <h2 id = 'backgroundtxt'><span>Hi, I'm Sunay Dagli.<br>Welcome to my website!</span></h2>
             </section>
+
+
             <section class = "big-topic" id = 'about'> 
                 <h1>About Me</h1>
                 <ul class = "description">
-                    <li><img id = "me" type = "image/svg-xml" src="images/pfp.jpeg"></li>
-                    <li><p class="info">My name is Sunay Dagli and I am a sophomore at the University of California, Berkeley.<br><br>I am 
+                    <li data-aos='fade-right'><img id = "me" type = "image/svg-xml" src="images/pfp.jpeg"></li>
+                    <li data-aos= 'fade-left' ><p class="info">My name is Sunay Dagli and I am a sophomore at the University of California, Berkeley.<br><br>I am 
                         currently pursuing a dual-degree in Electrical Engineering & Computer Science (EECS) and Energy Engineering through
                         the College of Engineering. I am passionate about the intersection between software development and impact-driven 
                         fields such as sustainability. To further understand how technology, specifically software and computer engineering, 
                         can reduce large crises facing our world today, I wanted to approach both sides, thus I am pursing the dual major.<br><br>Outside of academics, my hobbies include
                         playing and watching basketball (Lakers 2020 Champs, of course), learning new things on Youtube, binging Netflix shows, and playing video games.<br><br>I am always looking for exciting, new 
-                        opportunities, so feel free to contact me at <a href = "mailto: sunaydagli@berkeley.edu">sunaydagli@berkeley.edu</a>.
+                        opportunities, so feel free to contact me at <a href = "mailto: sunaydagli@berkeley.edu">sunaydagli@berkeley.edu</a> or take a look at my <a href='documents/Sunay Dagli Resume.pdf' target='_blank'><strong>resume</strong></a>.
                     </p></li>
                 </ul>
             </section>
             <section class = "big-topic" id = "education">
                 <h1>Education</h1>
                 <ul class = "college_degrees">
-                    <li>
+                    <li data-aos= 'fade-right' >
                         <a href="http://guide.berkeley.edu/undergraduate/degree-programs/electrical-engineering-computer-sciences/" target="_blank">
                         <img id="berk_eng" type="image/jpeg" src="images/berkenglogo.jpg">
                     </a>
                         <p>2019-2023 (expected)<br>B.S. in Electrical Engineering & Computer Science<br> University of California, Berkeley, College of Engineering</p>
                     </li>
-                    <li>
+                    <li data-aos= 'fade-left' >
                         <a href= "http://guide.berkeley.edu/undergraduate/degree-programs/energy-engineering/" target = "_blank">
                         <img id="berk_eng" type="image/jpeg" src="images/berkenglogo.jpg">
                     </a>
@@ -78,7 +83,7 @@
                 <h3>Coursework</h3>
                 <ul class = 'course_list'>
                     <a href="https://inst.eecs.berkeley.edu/~cs61a/fa19/" target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Structure and Interpretation of Computer Programs</h4>
                             <h5>CS 61A</h5>      
@@ -86,7 +91,7 @@
                     </li>
                 </a>
                 <a href="http://www-inst.eecs.berkeley.edu/~cs61b/sp20/"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4 class = bigger>Data Structures</h4>    
                             <h5>CS 61B</h5>
@@ -94,7 +99,7 @@
                     </li>
                 </a>
                 <a href="https://www.eecs70.org/"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Discrete Mathamatics and Probability Theory</h4>  
                             <h5>CS 70</h5>      
@@ -102,23 +107,23 @@
                     </li>
                 </a>
                 <a href="https://www.eecs16a.org/"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Designing Information Devices and Systems I</h4>
                             <h5>EECS 16A</h5>      
                         </div>
                     </li>
                 </a>
-                <a href="https://inst.eecs.berkeley.edu/~ee16b/sp20/"  target = '_blank'>
-                    <li class = 'tile'>
+                <a data-aos="zoom-out" href="https://inst.eecs.berkeley.edu/~ee16b/sp20/"  target = '_blank'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Designing Information Devices and Systems II</h4>
                             <h5>EECS 16B</h5>    
                         </div>
                     </li>
                 </a>
-                <a href="https://drive.google.com/file/d/1ryoeB7pPTu50k-30knZuAq-9i-i0zAGA/view?usp=sharing"  target = '_blank'></a>
-                    <li class = 'tile'>
+                <a data-aos="zoom-out" href="https://drive.google.com/file/d/1ryoeB7pPTu50k-30knZuAq-9i-i0zAGA/view?usp=sharing"  target = '_blank'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4 class = bigger>Multivariable Calculus</h4>
                             <h5>Math 53</h5>  
@@ -126,7 +131,7 @@
                     </li>
                 </a>
                 <a href="https://drive.google.com/file/d/1S0GY4jK80Z2f_l3A3HY59M3Vxg8jdx8_/view?usp=sharing"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Physics for Scientists and Engineers</h4>
                             <h5>Physics 7AB</h5>      
@@ -134,7 +139,7 @@
                     </li>
                 </a>
                 <a href="https://nuc.berkeley.edu/e-40/"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4 class = bigger>Thermodynamics</h4>
                             <h5>E 40</h5>       
@@ -142,7 +147,7 @@
                     </li>
                 </a>
                 <a href="https://drive.google.com/file/d/1T2kmbkILJLpZIHdCJRipSoR9Xz_DEQ66/view?usp=sharing"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4 class = bigger>India's Great Epics</h4>
                             <h5>SASIAN 142</h5>      
@@ -150,7 +155,7 @@
                     </li>
                 </a>
                 <a href="https://drive.google.com/file/d/1GChzl65xhkZJR8rso2KxzsOnF8MaV-yr/view?usp=sharing"  target = '_blank'>
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4 class = bigger>Human Biological Variation</h4>
                             <h5>IB 35AC</h5>       
@@ -159,7 +164,7 @@
                 </a>
                 <a href="https://www.canyons.edu/academics/english/sequence/103.php"  target = '_blank'>
 
-                    <li class = 'tile'>
+                    <li data-aos="zoom-out" class = 'tile'>
                         <div class='tile-body'>
                             <h4>Critical Reading, Writing, and Thinking</h4>
                             <h5>English 103</h5>     
@@ -169,11 +174,11 @@
                 </ul>
                 <h3>Skills</h3>
                 <ul class = skills>
-                    <li>
+                    <li data-aos="fade-right" >
                         <h4><strong>Languages: </strong><br>Python &bull; Java &bull; SQL &bull; HTML &bull;
                         CSS &bull; JavaScript &bull; React &bull; C</h4>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" >
                         <h4><strong>Platforms/Tools: </strong><br>MATLAB &bull; Pandas &bull; NumPy &bull; SciPy &bull; Flask 
                             &bull; Simulink &bull; GUIs &bull; IntelliJ &bull; Eclipse &bull; Git &bull; Adobe Suite
                             &bull; Figma &bull; Visual Studio Code &bull; Microsoft Office Suite &bull; LaTeX &bull; CKAN</h4>
@@ -183,9 +188,9 @@
             <section class = "big-topic" id = "experience">
                 <h1>Experience</h1>
                 <ul class = boxes>
-                    <li class = box>
+                    <li data-aos="fade-right" class = box>
                         <div class = "exp-logo">
-                            <a href="https://www.h2awsm.org/about">
+                            <a href="https://www.h2awsm.org/about" target = '_blank'>
                             <img src="images/lbnllogo.png">
                         </a>
                         </div>
@@ -199,9 +204,9 @@
                             </p>
                         </div>
                     </li>
-                    <li class = box>
+                    <li data-aos="fade-up" class = box>
                         <div class = "exp-logo">
-                            <a href="https://www.moevinc.com/">
+                            <a href="https://www.moevinc.com/" target = '_blank'>
                             <img id = long src="images/moevlogo.png">
                         </a>
                         </div>
@@ -215,9 +220,9 @@
                             </p>
                         </div>
                     </li>
-                    <li class = box>
+                    <li data-aos="fade-left" class = box>
                         <div class = "exp-logo">
-                            <a href="https://smartgrid.ucla.edu/">
+                            <a href="https://smartgrid.ucla.edu/" target = '_blank'>
                             <img src="images/smerclogo.png">
                             </a>
                         </div>
@@ -237,7 +242,7 @@
             <section class = "big-topic" id = "projects">
                 <h1>Projects</h1>
                 <ul class = boxes>
-                    <li class = box>
+                    <li data-aos="fade-right" class = box>
                         <div class = "exp-text">
                             <span class = "bolded"><Strong>In Game Statistics</Strong></span> <br>
                             <span class = "exp-name"><Strong>Java</Strong>
@@ -249,7 +254,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class = box>
+                    <li data-aos="fade-up" class = box>
                         <div class = "exp-text">
                             <span class = "bolded"><Strong>Gitlet</Strong></span> <br>
                             <span class = "exp-name"><Strong>Java</Strong>
@@ -262,7 +267,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class = box>
+                    <li data-aos="fade-left" class = box>
                         <div class = "exp-text">
                             <span class = "bolded"><Strong>Scheme Interpreter</Strong></span> <br>
                             <span class = "exp-name"><Strong>Python</Strong>
@@ -280,17 +285,38 @@
             </section>
             <section class = "big-topic" id = "extracurriculars">
                 <h1>Extracurriculars</h1>
+                <ul class= 'extracurrs'>
+                <li data-aos="fade-right" ><a href='https://ieee.berkeley.edu/' target='_blank'><img id = "extra" type = "image/png" src="images/ieeelogo.png"></a>
+                    <span></span>
+                <p class="info">
+                    <Strong>Treasurer</Strong>, Institute of Electrical and Electronics Engineers (IEEE) <br><br>
+                    &bull;Managed and distributed $25,000 of funds to IEEE student-run courses, events, and activities<br>
+                    &bull;Drafted and presented financial summaries of organization’s semesterly activities to the national branch of IEEE<br>
+                    &bull;Supervised allocation of funds from the Associated Students of the University of California and Engineering Student Services                    
+                </p></li>
+
+                <li data-aos="fade-left"><a href='https://beam.berkeley.edu/' target='_blank'><img id = "extra" type = "image/svg-xml" src="images/beamlogo.png"></a>
+                    <span></span>
+                <p class="info">
+                    <Strong>Mentor</Strong>, Berkeley Mentors and Engineers (BEAM) <br><br>
+                    &bull;Inspired and taught elementary-aged students through science experiments in an effort to provide equal STEM-education access to low-socioeconomic areas within Alameda County<br>
+                    &bull;Customized lessons to allow students to learn seemingly advanced scientific concepts such as the importance of renewable energy
+                </p></li>
+            </ul>
             </section>
             <section class = "big-topic" id = "contact">
                 <h1>Contact</h1>
+                <br>
+                <h2>Feel free to email me, view my resume, or check out my other accounts!</h2>
+                
             </section>
-            <section class = "big-topic" id = "links">
-                <h1>Links</h1>
-            </section>
-            <script async src= "scripts.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>     
         </main>
         <footer>
-            
+            <h2>Sunay Dagli, 2020</h2>
         </footer>
     </body>
 </html>
