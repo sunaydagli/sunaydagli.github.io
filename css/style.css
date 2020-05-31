@@ -75,7 +75,7 @@ nav li {
 
 a { color:#bbe1fa;
 text-decoration: none; 
-} Globally
+}
 
 :target::before {
     content: "";
