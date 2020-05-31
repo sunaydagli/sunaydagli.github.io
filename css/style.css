@@ -429,6 +429,12 @@ section h1 {
 }
 
 
+  @media only screen and (max-width: 1418px) {
+    #background::before {
+        content: '';
+        opacity:0;
+    }
+  }
   @media only screen and (max-width: 1140px) {
     #menubar {
         visibility: hidden;
@@ -472,6 +478,10 @@ section h1 {
     .extracurrs li {
         flex-direction: column;
         text-align: center;
+    }
+    #background::before {
+        content: '';
+        opacity:0;
     }
   }
 
