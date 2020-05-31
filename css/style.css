@@ -412,3 +412,9 @@ section h1 {
     min-width: 48px;
     height: auto;
   }
+
+  @media screen and (max-width: 768px) {
+      nav {
+          visibility: hidden;
+      }
+  }
