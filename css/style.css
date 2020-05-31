@@ -63,12 +63,21 @@ nav li {
     margin-left:10px;
     
 }
-#about {
-    margin: 0px 150px;
+.description {
+    margin: 35px 0px;
+}
+.description div{
+    margin: 0px 15px;
+}
+
+.description div a {
+    color: 
 }
 #about a:hover {
     color: #0f4c75;
 }
+#about a { text-decoration: none; color:#3282b8; }
+#about a:visited { text-decoration: none; color:#3282b8; }
 
 .big-topic {
     color: #bbe1fa;
@@ -81,7 +90,7 @@ text-decoration: none;
 
 /* Each state */
 
-.menu a:visited { text-decoration: none; color:bbe1fa; }
+.menu a:visited { text-decoration: none; color:#bbe1fa; }
 .menu a:hover { text-decoration: none; color: #3282b8; }
 .menu a:focus { text-decoration: none; }
 .menu a:hover, a:active { text-decoration: none; color: #3282b8 }
@@ -438,6 +447,20 @@ section h1 {
         text-align: center;
         vertical-align: center;
     }
+    .description {
+        margin: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    .description div{
+        margin: 10px 0px;
+    }
+    .description div p {
+        font-size: 15px;
+    }
   }
 
   /* @media only screen and (max-width: 1050px) {
@@ -455,25 +478,32 @@ section h1 {
     .parallax {
         background-attachment: scroll;
       }
-
+      #backgroundtxt {
+        font-size: 50px;
+    }
 }
 
   @media screen and (max-width: 768px) {
-      #menubar {
-          visibility: hidden;
-      }
-
+    #backgroundtxt {
+        font-size: 42px;
+    }
+    #background {
+        visibility: visible;
+    }
   }
 
   @media screen and (max-width: 480px) {
-    #menubar {
+    #backgroundtxt {
+        font-size: 32px;
+    }
+    #background {
         visibility: hidden;
     }
+
 }
 
 @media screen and (max-width: 320px) {
-    #menubar {
-        visibility: hidden;
-    }
+
+    
 }
 
