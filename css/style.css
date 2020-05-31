@@ -463,6 +463,14 @@ section h1 {
     .description div p {
         font-size: 15px;
     }
+    .extracurrs {
+        flex-direction: column;
+    }
+
+    .extracurrs li {
+        flex-direction: column;
+        text-align: center;
+    }
   }
 
   /* @media only screen and (max-width: 1050px) {
@@ -475,6 +483,7 @@ section h1 {
     .navbar-text {
         visibility: visible;
     }
+    
   }
 @media screen and (max-width: 800px) {
     .parallax {
@@ -483,6 +492,7 @@ section h1 {
       #backgroundtxt {
         font-size: 50px;
     }
+    
 }
 
   @media screen and (max-width: 768px) {
@@ -497,14 +507,6 @@ section h1 {
     }
     .skills li {
         margin: 20px 0px;
-    }
-    .extracurrs {
-        flex-direction: column;
-    }
-
-    .extracurrs li {
-        flex-direction: column;
-        text-align: center;
     }
   }
 
