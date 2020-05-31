@@ -522,7 +522,12 @@ section h1 {
 }
 
 @media screen and (max-width: 320px) {
-
-    
+    #backgroundtxt {
+        font-size: 36px;
+    }
+    #background::before {
+        content: '';
+        opacity:0;
+    }
 }
 
