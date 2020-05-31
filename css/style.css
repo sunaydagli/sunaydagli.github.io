@@ -518,7 +518,6 @@ section h1 {
         content: '';
         opacity:0;
     }
-
 }
 
 @media screen and (max-width: 320px) {
