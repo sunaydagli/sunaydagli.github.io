@@ -2,6 +2,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #1b262c;
 }
 
 html, body {
@@ -89,12 +91,6 @@ text-decoration: none;
 .menu a:hover { text-decoration: none; color: #3282b8; }
 .menu a:focus { text-decoration: none; }
 .menu a:hover, a:active { text-decoration: none; color: #3282b8 }
-
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  }
 
 .parallax {
     height: 100vh;
@@ -225,14 +221,17 @@ section h1 {
   }
 
   #courses h3{
+    color: #bbe1fa;
       margin: 15px 0px;
       font-size: 28px;
   }
 
   #courses h4{
+    color: #bbe1fa;
     font-size: 20px;
 }
 #courses h5{
+    color: #bbe1fa;
     font-size: 15px;
 }
 
@@ -413,8 +412,74 @@ section h1 {
     height: auto;
   }
 
+  #menubar {
+    visibility: hidden;
+}
+
+.navbar a {
+    color: #bbe1fa;
+    font-size: 20px;
+}
+
+
+  @media only screen and (max-width: 1140px) {
+    #menubar {
+        visibility: hidden;
+    }
+    #navbar {
+        visibility: visible;
+    }
+    .navbar-toggler {
+        color: 
+    }
+    #backgroundtxt {
+        display: block;
+        color: #bbe1fa;
+        position: absolute;
+        font-size: 62px;
+        text-align: center;
+        line-height: 100%;
+    }
+    #background {
+        text-align: center;
+        vertical-align: center;
+    }
+  }
+
+  /* @media only screen and (max-width: 1050px) {
+    #backgroundtxt {
+        color: black;
+    }
+  } */
+
+  @media screen and (max-width: 991px) {
+    .navbar-text {
+        visibility: visible;
+    }
+  }
+@media screen and (max-width: 800px) {
+    .parallax {
+        background-attachment: scroll;
+      }
+
+}
+
   @media screen and (max-width: 768px) {
-      nav {
+      #menubar {
           visibility: hidden;
       }
+
   }
+
+  @media screen and (max-width: 480px) {
+    #menubar {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #menubar {
+        visibility: hidden;
+    }
+}
+
