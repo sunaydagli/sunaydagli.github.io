@@ -192,7 +192,7 @@ section h1 {
     padding: 10px 10px;
     margin: 40px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-evenly;
   }
 
@@ -208,7 +208,7 @@ section h1 {
 
   #berk_eng {
       margin-bottom: 5px;
-      max-width: 40%;
+      max-width: 150px;
       height: auto;
       vertical-align: middle;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -257,7 +257,7 @@ section h1 {
       -webkit-box-direction: normal;
       vertical-align:middle;
       width: 17rem;
-      min-height: 80px;
+      min-height: 5.7rem;
       padding: 5px;
       margin: 15px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -495,8 +495,11 @@ section h1 {
     .navbar-text {
         visibility: visible;
     }
-    
+    .college_degrees {
+        flex-direction: column;
+    }
   }
+
 @media screen and (max-width: 800px) {
     .parallax {
         background-attachment: scroll;
@@ -504,7 +507,6 @@ section h1 {
       #backgroundtxt {
         font-size: 50px;
     }
-    
 }
 
   @media screen and (max-width: 768px) {
