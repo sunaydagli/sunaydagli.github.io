@@ -325,6 +325,9 @@ section h1 {
       color: #bbe1fa;
   }
   
+  #projects a {
+    color: #bbe1fa;
+}
 
   img {
     transition: .3s;
@@ -393,7 +396,7 @@ section h1 {
       font-weight: lighter;
       background-color: #0f4c75;
       color: #bbe1fa;
-      height: 50px;
+      height: 40px;
       align-items: center;
       justify-content: space-around;
       text-align: center;
