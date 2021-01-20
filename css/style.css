@@ -294,7 +294,7 @@ section h1 {
   }
 
   .box {
-    width: 500px;
+    max-width: 500px;
     max-height: 600px;
   }
 
