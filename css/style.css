@@ -293,6 +293,11 @@ section h1 {
     line-height: 2;
   }
 
+  .box {
+    width: 500px;
+    max-height: 580px;
+  }
+
   .boxes {
       display: flex;
       flex-wrap: wrap;
