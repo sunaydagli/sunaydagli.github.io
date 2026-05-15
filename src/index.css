@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer base {
+  body {
+    @apply bg-black font-sans text-base font-light text-paper antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-normal uppercase tracking-tight text-paper;
+  }
+}
+
+::selection {
+  @apply bg-leaf/35 text-paper;
+}
+
+.grid-bg {
+  background-size: 48px 48px;
+  background-image:
+    linear-gradient(to right, rgba(217, 227, 218, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(217, 227, 218, 0.04) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, black 20%, transparent 75%);
+}
+
+.glass {
+  @apply border border-white/10 bg-surface-900/75 shadow-subtle backdrop-blur-xl;
+}
+
+.text-gradient {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff, #d9e3da);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .text-gradient {
+    color: transparent;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-black;
+  }
+}
+
+@keyframes gallery-slot-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.photo-gallery-slot {
+  animation: gallery-slot-in 0.5s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-gallery-slot {
+    animation: none;
+  }
+}
