@@ -7,7 +7,7 @@ export function Contact({ onOpenResume }) {
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="glass rounded-3xl p-8">
           <p className="text-mist/85">
-            Reach out for collaborations in cloud software, sustainability-informed systems, or research engineering.
+            Always open to connecting with engineers, founders, and researchers working on high-impact algorithmic problems, frontier AI infrastructure, distributed systems, and climate/energy computation.
           </p>
           <dl className="mt-8 space-y-4 text-sm">
             <div>
