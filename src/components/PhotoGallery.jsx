@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Section } from './Section';
-import { photographyIntro, photographyPhotos } from '../data/photography';
+import {
+  photographyHandle,
+  photographyIntro,
+  photographyPhotos,
+  photographyProfileUrl,
+} from '../data/photography';
 
 const ROTATION_MS = 5500;
 const MAX_VISIBLE = 3;
@@ -76,20 +81,22 @@ export function PhotoGallery() {
 
   return (
     <Section id="photography" eyebrow="Hobby" title="Photography">
-      <p className="mb-10 max-w-2xl text-base leading-relaxed text-mist/85">{photographyIntro}</p>
+      <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <p className="max-w-2xl text-base leading-relaxed text-mist/85">{photographyIntro}</p>
+        <a
+          href={photographyProfileUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-4 py-2 font-barlow text-sm font-semibold uppercase tracking-[2px] text-leaf transition hover:border-leaf/40 hover:bg-white/10"
+        >
+          {photographyHandle} ↗
+        </a>
+      </div>
 
       {photos.length === 0 ? (
         <div className="glass rounded-3xl p-10 text-mist/80">
           <p className="font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-leaf">
             No photos yet
-          </p>
-          <p className="mt-4 text-sm leading-relaxed">
-            Add files under{' '}
-            <code className="rounded bg-white/10 px-1.5 py-0.5 text-paper">public/photos/</code> and list them
-            in{' '}
-            <code className="rounded bg-white/10 px-1.5 py-0.5 text-paper">src/data/photography.js</code>
-            — each entry needs a <code className="text-paper">src</code> path and a{' '}
-            <code className="text-paper">description</code>.
           </p>
         </div>
       ) : (
@@ -111,23 +118,54 @@ export function PhotoGallery() {
                 visibleCount === 1 ? 'max-w-2xl sm:mx-auto' : visibleCount === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'
               }`}
             >
-              {visible.map((item) => (
-                <figure
-                  key={`${item.src}-${start}-${item.slotIndex}`}
-                  className="photo-gallery-slot group flex flex-col"
-                >
-                  <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/40">
-                    <img
-                      src={item.src}
-                      alt={item.alt ?? item.description}
-                      className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <figcaption className="mt-3 text-sm leading-snug text-mist/80">{item.description}</figcaption>
-                </figure>
-              ))}
+              {visible.map((item) => {
+                const Wrapper = item.permalink ? 'a' : 'div';
+                const wrapperProps = item.permalink
+                  ? {
+                      href: item.permalink,
+                      target: '_blank',
+                      rel: 'noreferrer',
+                    }
+                  : {};
+                return (
+                  <figure
+                    key={`${item.src}-${start}-${item.slotIndex}`}
+                    className="photo-gallery-slot group flex flex-col"
+                  >
+                    <Wrapper
+                      {...wrapperProps}
+                      className="relative block overflow-hidden rounded-2xl border border-white/10 bg-black/40 transition hover:border-leaf/35"
+                    >
+                      <img
+                        src={item.src}
+                        alt={item.alt ?? item.description}
+                        referrerPolicy="no-referrer"
+                        onError={(e) => {
+                          if (item.fallbackSrc && e.currentTarget.src !== item.fallbackSrc) {
+                            e.currentTarget.src = item.fallbackSrc;
+                          }
+                        }}
+                        className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </Wrapper>
+                    <figcaption className="mt-3 flex items-center justify-between gap-2 text-sm leading-snug text-mist/80">
+                      <span>{item.description}</span>
+                      {item.permalink && (
+                        <a
+                          href={item.permalink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="shrink-0 text-xs text-leaf/80 hover:text-leaf hover:underline"
+                        >
+                          View post ↗
+                        </a>
+                      )}
+                    </figcaption>
+                  </figure>
+                );
+              })}
             </div>
 
             {showNav && (
@@ -145,7 +183,7 @@ export function PhotoGallery() {
           {showNav && (
             <p className="mt-8 text-center text-xs text-mist/50">
               <span className="uppercase tracking-[0.2em]">
-                {reducedMotion ? 'Use arrows to browse' : 'Auto-rotates'} · {photos.length} photos
+                {reducedMotion ? 'Use arrows to browse' : 'Auto-rotates'} · {photos.length} photos from {photographyHandle}
               </span>
               {!reducedMotion && (
                 <>
