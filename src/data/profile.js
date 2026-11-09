@@ -11,7 +11,6 @@ export const profile = {
     email: 'mailto:sunayd529@gmail.com',
   },
   contact: {
-    phone: '(714) 363-1833',
     email: 'sunayd529@gmail.com',
   },
   about: [

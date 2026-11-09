@@ -8,7 +8,7 @@ export function Contact({ onOpenResume }) {
         <p className="max-w-3xl text-mist/85">
           Always open to connecting with engineers, founders, and researchers working on high-impact algorithmic problems, frontier AI infrastructure, distributed systems, and climate/energy computation.
         </p>
-        <dl className="mt-8 grid gap-6 text-sm sm:grid-cols-2 max-w-xl">
+        <dl className="mt-8 space-y-4 text-sm">
           <div>
             <dt className="text-xs font-bold uppercase tracking-wide text-muted">Email</dt>
             <dd className="mt-1">
@@ -16,10 +16,6 @@ export function Contact({ onOpenResume }) {
                 {profile.contact.email}
               </a>
             </dd>
-          </div>
-          <div>
-            <dt className="text-xs font-bold uppercase tracking-wide text-muted">Phone</dt>
-            <dd className="mt-1 text-paper">{profile.contact.phone}</dd>
           </div>
         </dl>
         <div className="mt-8 flex flex-wrap gap-3">
