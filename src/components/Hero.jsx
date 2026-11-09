@@ -16,14 +16,6 @@ export function Hero({ onOpenResume }) {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href={profile.socials.github}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-2xl border border-white/15 bg-transparent px-6 py-3 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-paper transition hover:border-mist/40 hover:bg-white/5"
-            >
-              GitHub
-            </a>
-            <a
               href={profile.socials.linkedin}
               target="_blank"
               rel="noreferrer"

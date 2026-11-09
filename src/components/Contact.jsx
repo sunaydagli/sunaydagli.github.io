@@ -4,52 +4,48 @@ import { Section } from './Section';
 export function Contact({ onOpenResume }) {
   return (
     <Section id="contact" eyebrow="Hello" title="Contact">
-      <div className="grid gap-8 lg:grid-cols-2">
-        <div className="glass rounded-3xl p-8">
-          <p className="text-mist/85">
-            Always open to connecting with engineers, founders, and researchers working on high-impact algorithmic problems, frontier AI infrastructure, distributed systems, and climate/energy computation.
-          </p>
-          <dl className="mt-8 space-y-4 text-sm">
-            <div>
-              <dt className="text-xs font-bold uppercase tracking-wide text-muted">Email</dt>
-              <dd className="mt-1">
-                <a href={profile.socials.email} className="font-medium text-leaf hover:underline">
-                  {profile.contact.email}
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs font-bold uppercase tracking-wide text-muted">Phone</dt>
-              <dd className="mt-1 text-paper">{profile.contact.phone}</dd>
-            </div>
-          </dl>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={profile.socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl border border-white/15 bg-transparent px-5 py-2.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-paper hover:border-mist/35"
-            >
-              LinkedIn
-            </a>
-            <button
-              type="button"
-              onClick={onOpenResume}
-              className="rounded-xl bg-accent px-5 py-2.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-black hover:bg-accent-hover"
-            >
-              Open resume
-            </button>
+      <div className="glass rounded-3xl p-8">
+        <p className="max-w-3xl text-mist/85">
+          Always open to connecting with engineers, founders, and researchers working on high-impact algorithmic problems, frontier AI infrastructure, distributed systems, and climate/energy computation.
+        </p>
+        <dl className="mt-8 grid gap-6 text-sm sm:grid-cols-2 max-w-xl">
+          <div>
+            <dt className="text-xs font-bold uppercase tracking-wide text-muted">Email</dt>
+            <dd className="mt-1">
+              <a href={profile.socials.email} className="font-medium text-leaf hover:underline">
+                {profile.contact.email}
+              </a>
+            </dd>
           </div>
-        </div>
-        <div className="glass relative flex items-center justify-center overflow-hidden rounded-3xl p-8">
-          <div className="pointer-events-none absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-leaf/[0.06] blur-3xl" />
+          <div>
+            <dt className="text-xs font-bold uppercase tracking-wide text-muted">Phone</dt>
+            <dd className="mt-1 text-paper">{profile.contact.phone}</dd>
+          </div>
+        </dl>
+        <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href={profile.resumePdfPath}
-            download
-            className="relative rounded-xl bg-accent px-8 py-3.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-black shadow-lift transition hover:bg-accent-hover"
+            href={profile.socials.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl border border-white/15 bg-transparent px-5 py-2.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-paper transition hover:border-mist/35 hover:bg-white/5"
           >
-            Download PDF
+            LinkedIn
           </a>
+          <a
+            href={profile.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-xl border border-white/15 bg-transparent px-5 py-2.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-paper transition hover:border-mist/35 hover:bg-white/5"
+          >
+            GitHub
+          </a>
+          <button
+            type="button"
+            onClick={onOpenResume}
+            className="rounded-xl bg-accent px-5 py-2.5 font-barlow text-[0.9375rem] font-semibold uppercase tracking-[3px] text-black transition hover:bg-accent-hover"
+          >
+            Open resume
+          </button>
         </div>
       </div>
     </Section>
